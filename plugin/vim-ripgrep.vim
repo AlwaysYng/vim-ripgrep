@@ -17,7 +17,7 @@ if !exists('g:rg_command')
 endif
 
 if !exists('g:rg_root_types')
-  let g:rg_root_types = ['.git']
+  let g:rg_root_types = ['.git', '.svn']
 endif
 
 if !exists('g:rg_window_location')
