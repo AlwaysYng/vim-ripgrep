@@ -104,7 +104,7 @@ endfun
 
 fun! s:RgHighlight(txt)
   let @/ = matchstr(a:txt, "\\v(-)\@<!(\<)\@<=\\w+|['\"]\\zs.{-}\\ze['\"]")
-  call feedkeys(":let &hlsearch=1\<CR>", 'n')
+  call feedkeys("/" . @/ . "\<CR>", 'n')
 endfun
 
 fun! s:RgRootDir()
